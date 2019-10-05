@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:id="@+id/dnews2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/history"/>
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000"
+                    android:id="@+id/start_tree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="วันที่เริ่มปลูก"/>
+                <TextView
+                    android:textColor="#000"
+                    android:id="@+id/end_tree"
+                    android:layout_below="@+id/start_tree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="วันที่สิ้นสุดปลูก"/>
+                <TextView
+                    android:textColor="#000"
+                    android:id="@+id/stree_name"
+                    android:layout_below="@+id/end_tree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ผักที่ปลูก"/>
+
+                <TextView
+                    android:textColor="#000"
+                    android:id="@+id/weight_tree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/stree_name"
+                    android:layout_alignBottom="@+id/stree_name"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toEndOf="@+id/stree_name"
+                    android:text="น้ำหนัก" />
+
+                <TextView
+                    android:textColor="#000"
+                    android:id="@+id/total_revenue"
+                    android:layout_below="@+id/stree_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="รายได้"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>
